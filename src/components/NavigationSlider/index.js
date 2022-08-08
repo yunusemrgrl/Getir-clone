@@ -23,29 +23,23 @@ function NavigationSlider() {
     cssEase: 'linear',
   };
   return (
-    <div className='relative before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:insert-0 before:w-full before:h-full before:z-10'>
-      <Slider {...settings}>
-        <div>
-          <img
-            className='w-full  h-[500px] object-cover'
-            src='https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg'
-            alt='slider.img'
-          />
-        </div>
-        <div>
-          <img
-            className='w-full  h-[500px] object-cover'
-            src='https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg'
-            alt='slider.img'
-          />
-        </div>
-        <div>
-          <img
-            className='w-full  h-[500px] object-cover'
-            src='https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg'
-            alt='slider.img'
-          />
-        </div>
+    <nav className='relative h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:insert-0 before:w-full before:h-full before:z-10'>
+      <Slider {...settings} className='h-full hidden sm:block'>
+        <img
+          className='w-full  h-[500px] object-cover'
+          src='https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg'
+          alt='slider.img'
+        />
+        <img
+          className='w-full  h-[500px] object-cover'
+          src='https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg'
+          alt='slider.img'
+        />
+        <img
+          className='w-full  h-[500px] object-cover'
+          src='https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg'
+          alt='slider.img'
+        />
       </Slider>
       <div className='container flex items-center justify-between absolute top-0 left-1/2 -translate-x-1/2 h-full z-20'>
         <div className='flex flex-col gap-y-8'>
@@ -88,7 +82,7 @@ function NavigationSlider() {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
